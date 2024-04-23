@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		44A18A7A2BD8526000D2159A /* FocusTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A18A7A2BD8526000D2159A /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A18A7D2BD8526000D2159A /* FocusTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerApp.swift; sourceTree = "<group>"; };
 		44A18A7F2BD8526000D2159A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		44A18A822BD8526000D2159A /* FocusTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FocusTimer.xcdatamodel; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		44A18A7B2BD8526000D2159A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44A18A7A2BD8526000D2159A /* FocusTimer.app */,
+				44A18A7A2BD8526000D2159A /* App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,9 +78,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		44A18A792BD8526000D2159A /* FocusTimer */ = {
+		44A18A792BD8526000D2159A /* App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44A18A8E2BD8526100D2159A /* Build configuration list for PBXNativeTarget "FocusTimer" */;
+			buildConfigurationList = 44A18A8E2BD8526100D2159A /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
 				44A18A762BD8526000D2159A /* Sources */,
 				44A18A772BD8526000D2159A /* Frameworks */,
@@ -90,9 +90,9 @@
 			);
 			dependencies = (
 			);
-			name = FocusTimer;
+			name = App;
 			productName = FocusTimer;
-			productReference = 44A18A7A2BD8526000D2159A /* FocusTimer.app */;
+			productReference = 44A18A7A2BD8526000D2159A /* App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 44A18A752BD8526000D2159A /* Build configuration list for PBXProject "FocusTimer" */;
+			buildConfigurationList = 44A18A752BD8526000D2159A /* Build configuration list for PBXProject "App" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				44A18A792BD8526000D2159A /* FocusTimer */,
+				44A18A792BD8526000D2159A /* App */,
 			);
 		};
 /* End PBXProject section */
@@ -348,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		44A18A752BD8526000D2159A /* Build configuration list for PBXProject "FocusTimer" */ = {
+		44A18A752BD8526000D2159A /* Build configuration list for PBXProject "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44A18A8C2BD8526100D2159A /* Debug */,
@@ -357,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44A18A8E2BD8526100D2159A /* Build configuration list for PBXNativeTarget "FocusTimer" */ = {
+		44A18A8E2BD8526100D2159A /* Build configuration list for PBXNativeTarget "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44A18A8F2BD8526100D2159A /* Debug */,
