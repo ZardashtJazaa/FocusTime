@@ -7,10 +7,10 @@
 
 import CoreData
 
-struct PersistenceController {
+public struct PersistenceController {
     static let shared = PersistenceController()
 
-    static var preview: PersistenceController = {
+    public static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
@@ -28,7 +28,7 @@ struct PersistenceController {
         return result
     }()
 
-    let container: NSPersistentContainer
+    public let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "FocusTimer")

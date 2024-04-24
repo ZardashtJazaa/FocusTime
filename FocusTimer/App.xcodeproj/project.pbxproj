@@ -8,19 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		44A18A7E2BD8526000D2159A /* FocusTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A18A7D2BD8526000D2159A /* FocusTimerApp.swift */; };
-		44A18A802BD8526000D2159A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A18A7F2BD8526000D2159A /* Persistence.swift */; };
-		44A18A832BD8526000D2159A /* FocusTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44A18A812BD8526000D2159A /* FocusTimer.xcdatamodeld */; };
-		44A18A852BD8526000D2159A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A18A842BD8526000D2159A /* ContentView.swift */; };
 		44A18A872BD8526100D2159A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A18A862BD8526100D2159A /* Assets.xcassets */; };
 		44A18A8B2BD8526100D2159A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A18A8A2BD8526100D2159A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44A04E7D2BD9A05D00F0E290 /* FocusTime */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FocusTime; path = ..; sourceTree = "<group>"; };
 		44A18A7A2BD8526000D2159A /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A18A7D2BD8526000D2159A /* FocusTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerApp.swift; sourceTree = "<group>"; };
-		44A18A7F2BD8526000D2159A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		44A18A822BD8526000D2159A /* FocusTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FocusTimer.xcdatamodel; sourceTree = "<group>"; };
-		44A18A842BD8526000D2159A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44A18A862BD8526100D2159A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A18A882BD8526100D2159A /* FocusTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FocusTimer.entitlements; sourceTree = "<group>"; };
 		44A18A8A2BD8526100D2159A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -40,6 +35,7 @@
 		44A18A712BD8526000D2159A = {
 			isa = PBXGroup;
 			children = (
+				44A04E7D2BD9A05D00F0E290 /* FocusTime */,
 				44A18A7C2BD8526000D2159A /* FocusTimer */,
 				44A18A7B2BD8526000D2159A /* Products */,
 			);
@@ -57,11 +53,8 @@
 			isa = PBXGroup;
 			children = (
 				44A18A7D2BD8526000D2159A /* FocusTimerApp.swift */,
-				44A18A7F2BD8526000D2159A /* Persistence.swift */,
-				44A18A842BD8526000D2159A /* ContentView.swift */,
 				44A18A862BD8526100D2159A /* Assets.xcassets */,
 				44A18A882BD8526100D2159A /* FocusTimer.entitlements */,
-				44A18A812BD8526000D2159A /* FocusTimer.xcdatamodeld */,
 				44A18A892BD8526100D2159A /* Preview Content */,
 			);
 			path = FocusTimer;
@@ -145,10 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44A18A832BD8526000D2159A /* FocusTimer.xcdatamodeld in Sources */,
 				44A18A7E2BD8526000D2159A /* FocusTimerApp.swift in Sources */,
-				44A18A852BD8526000D2159A /* ContentView.swift in Sources */,
-				44A18A802BD8526000D2159A /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,17 +280,18 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = CubeNet.FocusTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,17 +319,18 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = CubeNet.FocusTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -367,19 +359,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		44A18A812BD8526000D2159A /* FocusTimer.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				44A18A822BD8526000D2159A /* FocusTimer.xcdatamodel */,
-			);
-			currentVersion = 44A18A822BD8526000D2159A /* FocusTimer.xcdatamodel */;
-			path = FocusTimer.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 44A18A722BD8526000D2159A /* Project object */;
 }
