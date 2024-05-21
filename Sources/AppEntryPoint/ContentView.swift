@@ -8,16 +8,20 @@
 import SwiftUI
 import CoreData
 import Model
+import ComposableArchitecture
 
-struct ContentView: View {
+public struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
-    private var items: FetchedResults<Item>
+    public var items: FetchedResults<Item>
+    
+    
+    public init() { }
 
-    var body: some View {
+    public var body: some View {
         NavigationView {
             List {
                 ForEach(items) { item in
@@ -77,7 +81,7 @@ struct ContentView: View {
     }
 }
 
-private let itemFormatter: DateFormatter = {
+public let itemFormatter: DateFormatter = {
     let formatter = DateFormatter()
     formatter.dateStyle = .short
     formatter.timeStyle = .medium

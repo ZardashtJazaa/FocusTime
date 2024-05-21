@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		444D499E2BFD4A6600AE8A33 /* AppEntryPoint in Frameworks */ = {isa = PBXBuildFile; productRef = 444D499D2BFD4A6600AE8A33 /* AppEntryPoint */; };
+		444D49A02BFD4A6600AE8A33 /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = 444D499F2BFD4A6600AE8A33 /* Model */; };
 		44A18A7E2BD8526000D2159A /* FocusTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A18A7D2BD8526000D2159A /* FocusTimerApp.swift */; };
 		44A18A872BD8526100D2159A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A18A862BD8526100D2159A /* Assets.xcassets */; };
 		44A18A8B2BD8526100D2159A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A18A8A2BD8526100D2159A /* Preview Assets.xcassets */; };
@@ -26,18 +28,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444D49A02BFD4A6600AE8A33 /* Model in Frameworks */,
+				444D499E2BFD4A6600AE8A33 /* AppEntryPoint in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		444D499C2BFD4A6600AE8A33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		44A18A712BD8526000D2159A = {
 			isa = PBXGroup;
 			children = (
 				44A04E7D2BD9A05D00F0E290 /* FocusTime */,
 				44A18A7C2BD8526000D2159A /* FocusTimer */,
 				44A18A7B2BD8526000D2159A /* Products */,
+				444D499C2BFD4A6600AE8A33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +96,10 @@
 			dependencies = (
 			);
 			name = App;
+			packageProductDependencies = (
+				444D499D2BFD4A6600AE8A33 /* AppEntryPoint */,
+				444D499F2BFD4A6600AE8A33 /* Model */,
+			);
 			productName = FocusTimer;
 			productReference = 44A18A7A2BD8526000D2159A /* App.app */;
 			productType = "com.apple.product-type.application";
@@ -268,7 +284,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer/Preview Content\"";
-				DEVELOPMENT_TEAM = Q9ST892JUD;
+				DEVELOPMENT_TEAM = 7YS35HLT5X;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,7 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FocusTimer/Preview Content\"";
-				DEVELOPMENT_TEAM = Q9ST892JUD;
+				DEVELOPMENT_TEAM = 7YS35HLT5X;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -359,6 +375,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		444D499D2BFD4A6600AE8A33 /* AppEntryPoint */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppEntryPoint;
+		};
+		444D499F2BFD4A6600AE8A33 /* Model */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Model;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 44A18A722BD8526000D2159A /* Project object */;
 }

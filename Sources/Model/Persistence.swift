@@ -8,7 +8,7 @@
 import CoreData
 
 public struct PersistenceController {
-    static let shared = PersistenceController()
+    public static let shared = PersistenceController()
 
     public static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
@@ -30,8 +30,9 @@ public struct PersistenceController {
 
     public let container: NSPersistentContainer
 
-    init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "FocusTimer")
+    #warning("//TODO: app crashed , guessing there is an issue with referencing the database from a package")
+    public init(inMemory: Bool = false) {
+        container = NSPersistentContainer(name: "Shared")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }

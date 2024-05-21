@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Model
+import AppEntryPoint
 
 @main
 struct FocusTimerApp: App {
